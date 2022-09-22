@@ -20,7 +20,7 @@ This application uses the following Third-Party APIs:
 - jQuery
 - Moment
 
-Please ensure that the browser upi are using supports the above APIs.
+Please ensure that the browser you are using supports the above APIs.
 
 ## Usage
 The site is fully operational. Link to deployed webpage: https://honsumal.github.io/workday-scheduler/
