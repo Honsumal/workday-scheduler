@@ -1,7 +1,9 @@
+// Adds current time
 window.setInterval(function () {
     $('#currentDay').text(moment().format("dddd, MMMM Do YYYY, h:mm:ss a"))
 }, 1000);
 
+// Retrieves task for each hour from local storage
 function init () {
     $('#8h .description').val(localStorage.getItem('8h'));
     $('#9h .description').val(localStorage.getItem('9h'));
@@ -17,6 +19,7 @@ function init () {
     checkTime();
 }
 
+// Provides functionality to the save buttons
 $('.saveBtn').on('click', function(){
     let task  = $(this).siblings('.description').val();
     let hour = $(this).parent().attr('id');
@@ -24,6 +27,7 @@ $('.saveBtn').on('click', function(){
 
 })
 
+// Colors boxes based off current hour
 function checkTime(){
     let currentHour = moment().hour()
 
