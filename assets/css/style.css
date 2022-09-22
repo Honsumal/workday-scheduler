@@ -25,13 +25,15 @@ body {
   .description {
     white-space: pre-wrap;
   }
+
+  .description:hover {
+    box-shadow: inset 0px 0px 8px black, 0 0 15px black;
+  }
   
   .timeBlock {
     text-align: center;
     border-radius: 15px;
   }
-
-  
   
   .row {
     white-space: pre-wrap;
@@ -47,17 +49,16 @@ body {
   
   .past {
     background-color: #d3d3d3;
-    /* color: white; */
   }
   
   .present {
     background-color: #ff6961;
-    /* color: white; */
+
   }
   
   .future {
     background-color: #77dd77;
-    /* color: white; */
+
   }
   
   .saveBtn {

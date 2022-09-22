@@ -1,7 +1,5 @@
-let currentTime = moment()
-
 window.setInterval(function () {
-    $('#currentDay').text(currentTime.format("dddd, MMMM Do YYYY, h:mm:ss a"))
+    $('#currentDay').text(moment().format("dddd, MMMM Do YYYY, h:mm:ss a"))
 }, 1000);
 
 function init () {
@@ -27,7 +25,7 @@ $('.saveBtn').on('click', function(){
 })
 
 function checkTime(){
-    let currentHour = currentTime.hour()
+    let currentHour = moment().hour()
 
     $(".timeBlock").each(function(){
         if ($(this).attr('id').split('h')[0] < currentHour) {
